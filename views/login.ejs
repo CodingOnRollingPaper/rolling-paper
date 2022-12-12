@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/css/reset.css" />
+    <link rel="stylesheet" href="/static/css/common.css" />
+    <link rel="stylesheet" href="/static/css/login.css" />
+  </head>
+  <body>
+    <div id="wrap">
+      <h1 class="logo"><a href="/">마음푸쉬</a></h1>
+
+      <form action="/login" method="post">
+        <h2>Members Login</h2>
+        <p>아래 아이디와 비밀번호를 입력하세요</p>
+        <label for="userId">
+          <input
+            type="text"
+            name="userId"
+            id="userId"
+            class="input-box"
+            placeholder="아이디를 입력하세요"
+          />
+        </label>
+        <br />
+        <label for="userPw">
+          <input
+            type="password"
+            name="userPw"
+            id="userPw"
+            class="input-box"
+            placeholder="비밀번호를 입력하세요"
+          />
+        </label>
+        <br />
+        <button class="login">로그인</button>
+      </form>
+      <br />
+      <hr />
+      <p>아이디가 없으신 분은 회원가입을 해주세요</p>
+      <a href="/signup" class="signup">회원가입</a>
+    </div>
+  </body>
+</html>

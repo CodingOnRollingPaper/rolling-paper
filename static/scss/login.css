@@ -1,0 +1,54 @@
+#wrap .logo {
+  font-family: "GmarketSansMedium";
+  color: #fff;
+  font-size: 2em;
+  line-height: 2em;
+  text-align: center;
+}
+#wrap form {
+  width: 90%;
+  height: 50vh;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-align: center;
+}
+#wrap form h2 {
+  padding: 40px 0 20px;
+  font-size: 1.4em;
+}
+#wrap form p {
+  padding: 0 0 40px;
+}
+#wrap form .input-box {
+  outline: none;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 15px;
+  width: 80%;
+  margin: 0px 0px 10px;
+}
+#wrap form .login {
+  background: #fff;
+  padding: 15px;
+  width: 80%;
+  border-radius: 5px;
+  font-family: "GmarketSansMedium";
+}
+#wrap hr {
+  width: 90%;
+  margin: 10px auto 20px;
+}
+#wrap p {
+  text-align: center;
+}
+#wrap .signup {
+  display: block;
+  width: 80%;
+  padding: 15px;
+  background: #fff;
+  color: black;
+  margin: 20px auto;
+  border-radius: 5px;
+  text-align: center;
+}/*# sourceMappingURL=login.css.map */

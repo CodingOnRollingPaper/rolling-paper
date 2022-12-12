@@ -1,0 +1,25 @@
+header {
+  text-align: center;
+  font-family: "GmarketSansMedium";
+  color: #fff;
+  padding: 200px 0;
+}
+header .logo {
+  font-size: 4em;
+}
+header span {
+  font-size: 1em;
+  color: #fff;
+}
+
+.start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  padding: 15px;
+  border-radius: 5px;
+  background: #fff;
+  color: #000;
+  margin: 100px auto;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WELCOME</title>
+    <link rel="stylesheet" href="/static/css/reset.css" />
+    <link rel="stylesheet" href="/static/css/common.css" />
+    <link rel="stylesheet" href="/static/css/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <h1 class="logo"><a href="#">마음푸쉬</a></h1>
+        <span>당신의 마음을 글로 적어 전달해보세요!</span>
+      </header>
+      <a href="/login" class="start">시작하기</a>
+      <span class="count">가입자 수: <%= userCount %></span>
+      <!-- <article>
+        <h2>마음푸쉬하기</h2>
+        <h3>다른 이용자들의 롤링페이퍼를 구경해보세요</h3>
+        <ul class="letter">
+          <li class="letter-box">
+            <span class="nickname">닉네임</span>
+            <span class="count">12명 참여</span>
+          </li>
+        </ul>
+      </article> -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,180 @@
+$color-white: white;
+$color-black: black;
+
+body {
+  color: $color-white;
+}
+
+#wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: hidden;
+}
+
+#header {
+  margin: 10% 0;
+  font-size: 1.7rem;
+
+  .userId {
+    display: none;
+  }
+}
+
+// 메세지가 보이는 부분
+.postArea {
+  overflow: scroll;
+  // display: block;
+  height: 500px;
+  z-index: 1000;
+
+  // 메세지 입력시 추가되는 클래스
+  .textArea {
+    cursor: pointer;
+    width: 10vw;
+    min-width: 300px;
+    height: 75px;
+    background-color: $color-white;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 10px 0;
+
+    &:hover .postId {
+      font-weight: 700;
+    }
+  }
+
+  .postContent {
+    margin: 20px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .postContainer {
+    color: black;
+  }
+}
+
+// 글 작성하는 모달
+.writeContent {
+  background-color: $color-white;
+  color: black;
+  position: relative;
+  padding: 5%;
+  width: 25vw;
+  min-width: 370px;
+  height: 56vh;
+  border-radius: 10px;
+
+  .writeArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .submitContent {
+      width: 25vw;
+      min-width: 370px;
+      height: 178px;
+      resize: none;
+      margin: 20px 0;
+      padding: 10px;
+    }
+
+    .submitPw {
+      margin: 20px 0;
+      position: relative;
+      padding-left: 10px;
+      width: 25vw;
+      min-width: 370px;
+      height: 25px;
+    }
+
+    button.submitGo {
+      cursor: pointer;
+      position: relative;
+      border: 1px solid $color-black;
+      background-color: $color-black;
+      color: white;
+      width: 50px;
+      padding: 5px;
+    }
+  }
+}
+
+// 작성 이미지 버튼
+.writeImg {
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 85%;
+  left: 80%;
+
+  img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+// 편지 디테일 모달 창
+.postContainerDetail {
+  background-color: $color-white;
+  color: black;
+  position: relative;
+  padding: 5%;
+  width: 25vw;
+  min-width: 370px;
+  height: 56vh;
+  border-radius: 10px;
+  text-align: center;
+
+  .postIdDetail {
+    font-size: 1.5rem;
+    margin: 15px 0;
+  }
+  .postContentDetail {
+    height: 300px;
+    overflow: scroll;
+    text-align: start;
+    margin-top: 20px;
+    background-color: blanchedalmond;
+    padding: 10px;
+  }
+
+  .postBtn {
+    margin-top: 15px;
+    button {
+      margin: 0 10px;
+      border: 1px solid $color-black;
+      padding: 5px;
+      background-color: $color-black;
+      color: $color-white;
+    }
+  }
+
+  .editPw {
+    width: 20vw;
+    min-width: 350px;
+    height: 200px;
+    resize: none;
+    margin: 20px 0;
+    padding: 10px;
+  }
+}
+
+// 모달 닫기 버튼
+.close,
+.closeDetail {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.noshow {
+  display: none;
+}
