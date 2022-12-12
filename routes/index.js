@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const controller = require("../controller/Cmain");
+const controller = require("../Controller/Cmain");
 
 // 메인 페이지 GET
 router.get("/", controller.getMain);
